@@ -1,0 +1,49 @@
+<div class="page-container">
+<div class="main-content">
+  
+    <div class="section__content section__content--p30">
+   
+        <div class="container-fluid">
+            <div class="row">
+                <h3 style="margin-bottom: 20px; margin-left:18px ; color: grey;">Shops</h3>
+                <div class="col-lg-12">
+                    <button class="btn btn-info" (click)="addshop()">Add Shop</button>
+                    <div class="table-responsive table--no-card m-b-30">
+                       
+                        <table class="table table-borderless table-striped table-earning">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Shope name</th>
+                                    <th>Location</th>
+                                    <th>User name</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor ="let shop of shops ">
+                                    <td style=" 
+                                    display: flex;
+                                    justify-content: center;"><img src="{{fileUrl}}{{shop.profilePhoto}}" alt="" style="width: 100px;"> </td>
+                                    <td> {{shop.shopeName}}</td>
+                                    <td>{{shop.city}}</td>
+                                    <td>{{shop.phoneNumber}}</td>
+                                    <td *ngIf="shop.isActive == true" ><button class="btn btn-success" (click)="inActivateshop(shop)">Active</button> </td>
+                                    <td *ngIf="shop.isActive == false "><button class="btn btn-danger" (click)="activateshop(shop)">Inactive</button></td>
+                                    <td><button class="btn btn-primary" (click)="edit(shop)">Update Details</button> </td>
+                                    <td><button  class="btn btn-warning" (click)="propic(shop)">Update Profile Picture</button></td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<app-header></app-header>
+<app-sidebar></app-sidebar>

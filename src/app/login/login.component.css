@@ -1,0 +1,60 @@
+
+
+.content{
+
+  border-radius: 10%;
+  background-color: rgba(240, 255, 240, 0.513);
+  width: 100%;
+  padding: 0.9%;
+  margin-left: auto;
+  /* margin-top: 10%; */
+  margin-right: auto;
+  height: 1100px;
+}
+
+label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 120%;
+}
+
+input{
+  width: 98%;
+  padding: 9px;
+  border: 1px solid #d9d2d2;
+
+}
+
+h1{
+  font-family: sans-serif;
+  
+}
+
+#profile{
+  width: 50%;
+  border-radius: 600%;
+}
+
+button {
+  border: 30%;
+  width: 20%;
+  height: 200%;
+  background-color: rgba(81, 146, 243, 0.904);
+  text-decoration: none;
+  
+  border: none;
+  padding: 2%;
+  border-radius: 10%;
+}
+
+button:hover{
+  background-color: rgb(162, 175, 162);
+  cursor: pointer;
+}
+
+/*Media Devices*/
+
+@media only screen and (max-width: 600px) {
+  .content{
+      width: 90%;
+  }
+}

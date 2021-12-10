@@ -1,0 +1,175 @@
+<!-- 
+
+
+
+<div class="content">
+  <div style="    width: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+">
+
+
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="column">
+      <div class="row"  style="display: flex;
+      justify-content: center;">
+        <H1>Login</H1>
+
+      </div>
+      <div class="row" style="display: flex;
+      justify-content: center;">
+        <img id="profile"
+        src="./assets/images/logo.png"
+          alt="">
+
+      </div>
+      <br>
+      <div class="row">
+        <label for=""> User Name</label>
+        <br>
+        <input type="text"  formControlName="phoneNumber" class="form-control"  id="" placeholder="User Name">
+      </div>
+      <br>
+      <div class="row">
+        <label for="">Password</label>
+        <br>
+
+        <input type="text" class="form-control" formControlName="password" id="" placeholder="Password">
+
+      </div>
+      <br>
+      <div class="row">
+        <button>Login</button>
+      </div>
+    </div>
+
+
+
+  </form>
+</div>
+</div>
+
+ -->
+<style>
+  .ftco-section {
+    padding: 7em 0;
+}
+.container {
+    max-width: 1140px;
+}.justify-content-center {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}.text-center {
+    text-align: center !important;
+}.mb-5, .my-5 {
+    margin-bottom: 3rem !important;
+}.heading-section {
+    font-size: 28px;
+    color: #fff;
+}
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}.login-wrap {
+    position: relative;
+    color: rgba(255, 255, 255, 0.9);
+}.p-0 {
+    padding: 0 !important;
+}.text-center {
+    text-align: center !important;
+}
+.form-group {
+    position: relative;
+}
+.form-control {
+    background: white;
+    border: none;
+    height: 50px;
+    color: rgb(0, 0, 0) !important;
+    border: 1px solid transparent;
+    background: rgb(255, 255, 255);
+    border-radius: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.field-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.9);
+}
+.login-wrap h3 {
+    font-weight: 300;
+    color: #fff;
+}.btn.btn-primary {
+    background: #fbceb5 !important;
+    border: 1px solid #fbceb5 !important;
+    color: #000 !important;
+}
+</style>
+
+
+ <section class="ftco-section" style="    background-image: url('./assets/images/bg.jpg');  background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center center;
+ height: 1160px;
+">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center mb-5">
+      </div>
+    </div>
+
+    <div>
+
+
+    <div class="row" style="display: flex;
+    justify-content: center;">
+      <img id="profile" style="width: 26%;"
+      src="./assets/images/logo.png"
+        alt="">
+
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4" style="">
+        <div class="login-wrap p-0">
+          <br>
+        <h2 class="heading-section" style="text-align: center;">Login </h2>
+          <br>
+          <form [formGroup]="loginForm" (ngSubmit)="login()">
+
+            <div class="form-group">
+              <input autocomplete="off" type="text" class="form-control" formControlName="phoneNumber"  placeholder="Username" required="">
+            </div>
+            <div class="form-group">
+              <input autocomplete="off" id="password-field" type="password" formControlName="password"  class="form-control" placeholder="Password" required="">
+              <!-- <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span> -->
+            </div>
+            <div class="form-group">
+              <button style="    width: 223px;
+              display: flex;    background: #6618cc !important;
+              justify-content: center; border: none !important; color: white !important;
+              align-items: center;margin: 0 auto;
+          " type="submit" class="form-control btn btn-primary submit px-3">Login</button>
+            </div>
+           
+          </form>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>

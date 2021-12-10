@@ -1,0 +1,35 @@
+<aside class="menu-sidebar d-none d-lg-block" style="border-right: 1px solid whitesmoke;">
+    <div class="logo">
+        <a href="#">
+            <!-- <img src="assets/images/logg.png" alt=" Admin" /> -->
+        </a>
+    </div>
+    <div class="menu-sidebar__content js-scrollbar1">
+        <nav class="navbar-sidebar">
+        <!-- src="./assets/images/logo.png" -->
+            <img src="./assets/images/logo.png" alt="">
+            <ul class="list-unstyled navbar__list active" >
+                <li routerLinkActive="active">
+                    <a routerLink ="/shop" routerLinkActive="active"><i class="fas fa-tachometer-alt"></i>Shops</a>
+                </li>
+                <li routerLinkActive="active"> <a routerLink ="/city" routerLinkActive="active">
+                        <i class="fas fa-chart-bar"></i>City</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a routerLink ="/category" routerLinkActive="active">
+                        <i class="fas fa-table"></i>Category</a>
+                </li>
+                <li >
+                    <a (click)="onLogot()" style="cursor: pointer;">
+                        <i class="far fa-check-square" ></i>Logout</a>
+                </li>
+               
+                
+                
+
+
+            </ul>
+        </nav>
+    </div>
+</aside>
+<!-- END MENU SIDEBAR-->
