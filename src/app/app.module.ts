@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { EditShopsComponent } from './home/shops/edit-shops/edit-shops.component';
 import { EditProPicComponent } from './home/shops/edit-pro-pic/edit-pro-pic.component';
@@ -42,6 +43,7 @@ import { LoaderInterceptor } from './_interceptor/loadingInterceptor';
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    BrowserAnimationsModule,
     ReactiveFormsModule,
     NgxSpinnerModule,
     AppRoutingModule
